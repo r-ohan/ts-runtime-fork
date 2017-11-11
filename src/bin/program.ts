@@ -1,9 +1,9 @@
 import * as cp from 'child_process';
-import * as path from 'path';
 import * as ora from 'ora';
-import * as chalk from 'chalk';
+const chalk: any = require('chalk');
 import * as util from './util';
 import { Options } from '../options';
+import * as path from 'path';
 
 export interface ProgramStatus {
   [index: string]: any;
@@ -196,7 +196,7 @@ export const status: ProgramStatus = {
     status.term();
     process.exit(1);
   },
-}
+};
 
 process.on('uncaughtException', (error: Error) => {
   status.error(error);

@@ -10,6 +10,7 @@ import { InterfaceDeclarationMutator } from './mutators/InterfaceDeclararionMuta
 import { SourceFileMutator } from './mutators/SourceFileMutator';
 import { TypeAliasDeclarationMutator } from './mutators/TypeAliasDeclararionMutator';
 import { VariableDeclarationListMutator } from './mutators/VariableDeclarationListMutator';
+import { FunctionCallMutator } from './mutators/FunctionCallMutator';
 
 export {
   Mutator,
@@ -24,20 +25,22 @@ export {
   SourceFileMutator,
   TypeAliasDeclarationMutator,
   VariableDeclarationListMutator,
+  FunctionCallMutator,
 };
 
 export const mutators: (typeof Mutator)[] = [
-  ArrowFunctionMutator,
-  AsExpressionMutator,
-  BinaryExpressionMutator,
-  BlockLikeMutator,
-  ClassDeclarationMutator,
-  FunctionDeclarationMutator,
-  FunctionExpressionMutator,
-  InterfaceDeclarationMutator,
-  SourceFileMutator,
-  TypeAliasDeclarationMutator,
-  VariableDeclarationListMutator,
+  // ArrowFunctionMutator,
+  // AsExpressionMutator,
+  // BinaryExpressionMutator,
+  // BlockLikeMutator,
+  // ClassDeclarationMutator,
+  // FunctionDeclarationMutator,
+  // FunctionExpressionMutator,
+  // InterfaceDeclarationMutator,
+  // SourceFileMutator,
+  // TypeAliasDeclarationMutator,
+  // VariableDeclarationListMutator,
+  FunctionCallMutator,
 ];
 
 export function getMutators(): Mutator[] {

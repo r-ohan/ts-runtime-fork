@@ -1153,7 +1153,7 @@ export class Factory {
 
   public mutateFunctionBody<T extends FunctionDeclarationLikeNode>(n: T): T {
     let node = n as any;
-
+    console.log(node.name);
     if (!node.body) {
       return node;
     }
